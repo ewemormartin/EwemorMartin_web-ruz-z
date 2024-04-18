@@ -1,0 +1,38 @@
+export const ADATLISTA=[
+    {
+        termekNev:"",
+        ár:0,
+        kép:""
+    },
+    {
+        termekNev:"",
+        ár:0,
+        kép:""
+    },
+    {
+        termekNev:"",
+        ár:0,
+        kép:""
+    },
+    {
+        termekNev:"",
+        ár:0,
+        kép:""
+    },
+    {
+        termekNev:"",
+        ár:0,
+        kép:""
+    },
+    {
+        termekNev:"",
+        ár:0,
+        kép:""
+    },
+    {
+        termekNev:"",
+        ár:0,
+        kép:""
+    },
+    
+]
