@@ -8,7 +8,7 @@ export function listaLetrehoz(lista) {
                 <div class="card-body">
                     <h4 class="card-title">${element.termekNev}</h4>
                     <p class="card-text">${element.ar}</p>
-                    <a href="#" class="btn btn-primary">Kosárba</a>
+                    <a href="#" class="btn btn-primary" id="kosarbaRak">Kosárba</a>
                 </div>
                 
             </div>
@@ -22,4 +22,14 @@ export function listaLetrehoz(lista) {
 
 export function listaMegjelenites(txt){
     $('.tartalom').append(txt);
+}
+
+export function Kosárba(){
+    const kosarTartalom = [];
+    const kosar = $('#kosarbaRak');
+    kosar.click(() => {
+        alert('A termék a kosárba került');
+    });
+
+    
 }
