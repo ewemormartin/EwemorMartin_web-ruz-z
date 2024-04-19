@@ -1,38 +1,33 @@
 export const ADATLISTA=[
     {
-        termekNev:"",
-        ár:0,
-        kép:""
+        termekNev:"Hazai Mez",
+        ar:"12.000 ft",
+        kep:"kepek/lucho_hazai.jpg"
     },
     {
-        termekNev:"",
-        ár:0,
-        kép:""
+        termekNev:"Vendég Mez",
+        ar:"12.000 ft",
+        kep:"kepek/lucho_vendeg.jpg"
     },
     {
-        termekNev:"",
-        ár:0,
-        kép:""
+        termekNev:"Harmadik Mez",
+        ar: "12.000 ft",
+        kep:"kepek/harmadik_mez.jpg"
     },
     {
-        termekNev:"",
-        ár:0,
-        kép:""
+        termekNev:"Liverpool piros pulcsi",
+        ar: "15.000 ft",
+        kep:"kepek/nunez_pulcsi.jpg"
     },
     {
-        termekNev:"",
-        ár:0,
-        kép:""
+        termekNev:"Liverpool szürke pulcsi",
+        ar:"15.000 ft",
+        kep:"kepek/tsimikas_pulcsi.jpg"
     },
     {
-        termekNev:"",
-        ár:0,
-        kép:""
-    },
-    {
-        termekNev:"",
-        ár:0,
-        kép:""
+        termekNev:"Livepool fekete pulcsi",
+        ar:"15.000 ft",
+        kep:"kepek/tsimikas_pulcsi2.jpg"
     },
     
 ]

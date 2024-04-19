@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+}
+
+.tartalom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin: auto;
+        padding: 10px;
+}

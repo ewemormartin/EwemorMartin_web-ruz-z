@@ -1,4 +1,10 @@
 import { ADATLISTA } from "./adatok.js";
-import { listaLetrehoz } from "./fuggvenyek.js";
+import { listaLetrehoz, listaMegjelenites } from "./fuggvenyek.js";
 
-listaLetrehoz(ADATLISTA)
+init();
+
+
+
+function init() {
+    listaMegjelenites(listaLetrehoz(ADATLISTA));
+}
