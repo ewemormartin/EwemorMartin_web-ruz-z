@@ -25,11 +25,23 @@ export function listaMegjelenites(txt){
 }
 
 export function Kosárba(){
-    const kosarTartalom = [];
-    const kosar = $('#kosarbaRak');
-    kosar.click(() => {
-        alert('A termék a kosárba került');
-    });
-
+    let kosarTXT = "";
+    $('#kosarbaRak').click(function(){
+        kosarTXT += `
+        <div class="container mt-3">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="${element.kep}" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">${element.termekNev}</h4>
+                    <p class="card-text">${element.ar}</p>
+                </div>
+            </div>
+        </div>  
+        `
+        $('.kosarTartalom').append(kosarTXT);
+    })       
+        
     
+    
+   
 }

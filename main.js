@@ -8,5 +8,6 @@ init();
 
 function init() {
     listaMegjelenites(listaLetrehoz(ADATLISTA));
-    Kosárba();
+    Kosárba();  
+    
 }
