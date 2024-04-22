@@ -31,8 +31,14 @@ export function Kosarba() {
         let kosarTXT = `
             <div class="cart-item">
                 <p>${termekNev} - ${ar}</p>
+                <button class="btn btn-danger delete-btn">Delete</button>
             </div>
         `;
         $('.kosarTartalom').append(kosarTXT);
     });
 } 
+export function KosarTorles() {
+    $('.kosarTartalom').on('click', '.delete-btn', function() {
+        $(this).closest('.cart-item').remove();
+    });
+}
