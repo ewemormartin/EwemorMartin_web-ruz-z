@@ -24,24 +24,16 @@ export function listaMegjelenites(txt){
     $('.tartalom').append(txt);
 }
 
-export function Kosárba(){
-    let kosarTXT = "";
-    $('#kosarbaRak').click(function(){
-        kosarTXT += `
-        <div class="container mt-3">
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="${element.kep}" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">${element.termekNev}</h4>
-                    <p class="card-text">${element.ar}</p>
-                </div>
+export function Kosarba() {
+    $('.tartalom').on('click', '#kosarbaRak', function() {
+        let kartya = $(this).closest('.card');
+        let termekNev = kartya.find('.card-title').text();
+        let ar = kartya.find('.card-text').text();
+        let kosarTXT = `
+            <div class="cart-item">
+                <p>${termekNev} - ${ar}</p>
             </div>
-        </div>  
-        `
+        `;
         $('.kosarTartalom').append(kosarTXT);
-    })       
-        
-    
-    
-   
+    });
 }
