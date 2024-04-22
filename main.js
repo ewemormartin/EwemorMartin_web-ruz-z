@@ -1,6 +1,6 @@
 import { ADATLISTA } from "./adatok.js";
 import { listaLetrehoz, listaMegjelenites } from "./fuggvenyek.js";
-import { Kosarba } from "./fuggvenyek.js";
+import { Kosárba } from "./fuggvenyek.js";
 
 init();
 
@@ -8,6 +8,6 @@ init();
 
 function init() {
     listaMegjelenites(listaLetrehoz(ADATLISTA));
-    Kosarba();  
+    Kosárba();  
     
 }

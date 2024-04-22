@@ -23,7 +23,6 @@ export function listaLetrehoz(lista) {
 export function listaMegjelenites(txt){
     $('.tartalom').append(txt);
 }
-
 export function Kosarba() {
     $('.tartalom').on('click', '#kosarbaRak', function() {
         let kartya = $(this).closest('.card');
@@ -36,4 +35,4 @@ export function Kosarba() {
         `;
         $('.kosarTartalom').append(kosarTXT);
     });
-}
+} 
