@@ -17,6 +17,7 @@ article{
 }
 aside{
     grid-area: as;
+    
 }
 footer{
     grid-area: f;
@@ -28,4 +29,23 @@ main{
     "a a as"
     "a a as"
     "f f f";
+}
+.dropdown {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+}
+#kepek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white ;
 }
