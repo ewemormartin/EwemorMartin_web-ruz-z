@@ -1,0 +1,21 @@
+Amilyen függvéneyket használok:
+
+    kartyaLetrehoz():
+          Létrehoz egy kártya divet az ADATLISTA minden elemeiből (kép, termékNev,ar) és eltárolja egy txt változóba.
+
+    listaMegjelenit():
+          Megjeleniti az index html-ben a "tartalom" class-al rendelkező divben a txt változót amit a kartyaLetrehoz ad visszatérési értékként
+
+    
+    Kosarba():
+          a tartalom class-al rendelkező divben adott kártya "kosarbaRak" id-val rendelkező gombra kattintunk akkor megjelenití az aside-ban a "kosarTartalom"-ra elnevezett div-ben az árat és a nevét   
+          a terméknek amit a korárba akarunk rakni.
+
+    kosarTorles():
+          Azokat a kártya termékeket amiket a kosárTartalomba raktunk kattintásra eltávolítja onnan.
+
+    osszegSzamol():
+    arSzerintSorrend():
+    nevSzerintSorrend():
+    
+        
