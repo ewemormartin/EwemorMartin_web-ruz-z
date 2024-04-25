@@ -13,5 +13,6 @@ function init() {
     Kosarba();
     KosarTorles();
     osszegSzamol();
+    osszegMegjelenit();
 
 }

@@ -1,5 +1,5 @@
 
-const kosar = [];
+export const kosar = [];
 export function kartyaLetrehoz(lista) {
     let txt = ""
     lista.forEach((element,index) => {
@@ -17,7 +17,6 @@ export function kartyaLetrehoz(lista) {
         `
     });
     return txt;
-    
 }
 
 
@@ -38,6 +37,7 @@ export function Kosarba() {
         `;
         $('.kosarTartalom').append(kosarTXT);
         kosar.push(kosarTXT);
+        console.log(kosar);
     });
 } 
 
@@ -46,12 +46,12 @@ export function KosarTorles() {
         $(this).closest('.cart-item').remove();
     });
 }
-export function osszegSzamol(lista){
-    let osszeg = 0;
+export function osszegSzamol(){
+    let osszeg;
     kosar.forEach(element => {
-        osszeg+= kosar
+        osszeg+=element.ar;
     });
-    return osszeg
+    return osszeg;
 }
 
 export function osszegMegjelenit(osszeg){

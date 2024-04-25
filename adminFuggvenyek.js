@@ -1,4 +1,3 @@
-
 export function tablazatLetrehoz(lista){
     let adminTXT = "<div><table class='table table-striped' style='width:1000px'>";
     adminTXT += "<thead><tr><th>Kép</th><th>Név</th><th>Ár</th><th></th></tr></thead>";
