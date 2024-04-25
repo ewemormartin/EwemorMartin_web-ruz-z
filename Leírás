@@ -1,5 +1,25 @@
-Amilyen függvéneyket használok:
+Készíts "webáruházat" tetszőleges témában. 
 
+Egy listában tároljuk az objektumokat, minden objektumnak legalább 3 adata legyen!
+
+Az adatokat jelenítsd meg egy táblázatban!
+A táblázat fejlécére kattintva tudjunk rendezni növekvő, illetve csökkenő sorrendbe az adatokat (Egyszer kattintunk növekvő, mégegyszer- csökkenő sorrendben az adott fejléc szerint) Az elv: a listádat rendezd, majd hívd meg újra az oldal megjelenítését!
+Készíts 3 szűrés mezőt, amiben kiválasztott mezők alapján szűrheted az adataidat!
+++ A táblázat minden sora mellett legyen egy törlés gomb, amivel az adott sort tudjuk törölni a táblázatból. 
+
+
+PUBLIKUS FELÜLET 
+A publikus felületen div-ekben jelenítsük meg az adatokat. (az előzetes minta alapján! Figyelj a reszponzitvitásra!
+Az oldalon legyen szűrési és rendezési lehetőség is!
+Kosár funkció:  A publikus felületen a terméket helyezheted a kosárba. A kosárban lévő termékeket listázhatod, törölheted, módosíthatod az elemszámát, majd leadhatod a rendelést!
+
+
+
+
+
+
+
+Amilyen függvéneyket használok:
     kartyaLetrehoz():
           Létrehoz egy kártya divet az ADATLISTA minden elemeiből (kép, termékNev,ar) és eltárolja egy txt változóba.
 
