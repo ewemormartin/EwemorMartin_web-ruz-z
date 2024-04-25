@@ -1,4 +1,4 @@
-export function listaLetrehoz(lista) {
+export function kartyaLetrehoz(lista) {
     let txt = ""
     lista.forEach(element => {
         txt += `
@@ -9,16 +9,6 @@ export function listaLetrehoz(lista) {
                     <h4 class="card-title">${element.termekNev}</h4>
                     <p class="card-text">${element.ar}</p>
                     <a href="#" class="btn btn-primary" id="kosarbaRak">Kosárba</a>
-                </div>
-                <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                    Méretek
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Link 1</a></li>
-                    <li><a class="dropdown-item" href="#">Link 2</a></li>
-                    <li><a class="dropdown-item" href="#">Link 3</a></li>
-                </ul>
                 </div>
             </div>
         </div>
@@ -46,8 +36,15 @@ export function Kosarba() {
         $('.kosarTartalom').append(kosarTXT);
     });
 } 
+
 export function KosarTorles() {
     $('.kosarTartalom').on('click', '.delete-btn', function() {
         $(this).closest('.cart-item').remove();
     });
+}
+
+
+export function osszegSzamol(){
+    let osszeg;
+    
 }
