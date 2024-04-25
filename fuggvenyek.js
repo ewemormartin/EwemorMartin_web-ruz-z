@@ -1,6 +1,8 @@
+
+const kosar = [];
 export function kartyaLetrehoz(lista) {
     let txt = ""
-    lista.forEach(element => {
+    lista.forEach((element,index) => {
         txt += `
         <div class="container mt-3">
             <div class="card" style="width:400px">
@@ -8,7 +10,7 @@ export function kartyaLetrehoz(lista) {
                 <div class="card-body">
                     <h4 class="card-title">${element.termekNev}</h4>
                     <p class="card-text">${element.ar}</p>
-                    <a href="#" class="btn btn-primary" id="kosarbaRak">Kosárba</a>
+                    <button href="#" class="btn btn-primary kosarbaRak" id="${index}">Kosárba</button>
                 </div>
             </div>
         </div>
@@ -23,7 +25,8 @@ export function listaMegjelenites(txt){
     $('.tartalom').append(txt);
 }
 export function Kosarba() {
-    $('.tartalom').on('click', '#kosarbaRak', function() {
+    
+    $('.tartalom').on('click', '.kosarbaRak', function() {
         let kartya = $(this).closest('.card');
         let termekNev = kartya.find('.card-title').text();
         let ar = kartya.find('.card-text').text();
@@ -34,6 +37,7 @@ export function Kosarba() {
             </div>
         `;
         $('.kosarTartalom').append(kosarTXT);
+        kosar.push(kosarTXT);
     });
 } 
 
@@ -42,9 +46,14 @@ export function KosarTorles() {
         $(this).closest('.cart-item').remove();
     });
 }
+export function osszegSzamol(lista){
+    let osszeg = 0;
+    kosar.forEach(element => {
+        osszeg+= kosar
+    });
+    return osszeg
+}
 
-
-export function osszegSzamol(){
-    let osszeg;
-    
+export function osszegMegjelenit(osszeg){
+    $('.kosarOsszeg').append(osszeg);
 }
