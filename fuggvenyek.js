@@ -43,9 +43,13 @@ export function Kosarba() {
 
 export function KosarTorles() {
     $('.kosarTartalom').on('click', '.delete-btn', function() {
-        $(this).closest('.cart-item').remove();
+        let index = $(this).closest('.cart-item').index();
+        $(this).closest('.cart-item').remove(); // A kosárból töröljük az adott tételt
+        kosar.splice(index, 1); // Az adott tételt eltávolítjuk a kosárból
+        osszegMegjelenit(osszegSzamol()); // Az összeg újraszámolása és megjelenítése
     });
 }
+
 export function osszegSzamol(){
     let osszeg = 0;
     kosar.forEach(element => {
