@@ -1,5 +1,8 @@
-export function tablazatLetrehoz(lista){
-    let adminTXT = "<div><table class='table table-striped' style='width:1000px'>";
+import { ADATLISTA } from "./adatok.js";
+
+
+export function tablazatLetrehoz(lista) {
+    let adminTXT = "<div><table class='table table-striped' style='width:1000px' class='adatok'>";
     adminTXT += "<thead><tr><th>Kép</th><th>Név</th><th>Ár</th><th></th></tr></thead>";
     adminTXT += "<tbody>";
     lista.forEach((elem) => {
@@ -13,10 +16,17 @@ export function tablazatLetrehoz(lista){
     return adminTXT;
 }
 
-export function tablazatMegjelenit(adminTXT){
+export function tablazatMegjelenit(adminTXT) {
     $('.adminTartalom').append(adminTXT);
 }
 
-export  function arSzerintSorrend(){
-    
+export function rendez(lista, kulcs, rIrany) {
+    const rlista = lista.sort(function(e1,e2) {
+        return e1[kulcs]<e2[kulcs]?-1*rIrany:1*rIrany;
+    });
+    return rlista;
+}
+
+export function rendezArSzerint(lista) {
+    tablazatMegjelenit(tablazatLetrehoz(rendez(lista, 'ar', 1)));
 }
