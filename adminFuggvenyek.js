@@ -1,4 +1,5 @@
 import { ADATLISTA } from "./adatok.js";
+import { kosar } from "./fuggvenyek.js";
 
 
 export function tablazatLetrehoz(lista) {
@@ -28,5 +29,7 @@ export function rendez(lista, kulcs, rIrany) {
 }
 
 export function rendezArSzerint(lista) {
-    tablazatMegjelenit(tablazatLetrehoz(rendez(lista, 'ar', 1)));
+    const rendezettArLista = kosar.sort(function(a, b){return a - b});  
+    return rendezettArLista;
 }
+
