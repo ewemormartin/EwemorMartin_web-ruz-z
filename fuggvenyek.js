@@ -5,7 +5,7 @@ export function kartyaLetrehoz(lista) {
     lista.forEach((element,index) => {
         txt += `
         <div class="container mt-3">
-            <div class="card" style="width:400px">
+            <div class="card bg-dark text-white" style="width:400px">
                 <img class="card-img-top" id="kepek" src="${element.kep}" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">${element.termekNev}</h4>
@@ -78,4 +78,13 @@ function rendez(){
 export function darabSzamFrissites() {
     let darab = kosar.length;
     $('.darabSzam').text(`db: ${darab}`);
+}
+
+
+export function rendelGomb() {
+    $(document).ready(function() {
+        $("#rendel").click(function() {
+            alert("Rendelés elküldve az alábbi cimre 😎😎😎😎!");
+        });
+    });
 }

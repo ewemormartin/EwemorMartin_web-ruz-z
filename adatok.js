@@ -1,33 +1,33 @@
 export const ADATLISTA=[
     {
-        termekNev:"Hazai Mez",
+        termekNev:"Hazai Mez 2023/24",
         ar:12220,
-        kep:"kepek/lucho_hazai.jpg"
+        kep:"kepek/trent_hazai.png"
     },
     {
-        termekNev:"Vendég Mez",
+        termekNev:"Kapus Mez 2023/24",
         ar:12000,
-        kep:"kepek/lucho_vendeg.jpg"
+        kep:"kepek/alisson_kapus.png"
     },
     {
-        termekNev:"Harmadik Mez",
+        termekNev:"Hazai Mez 2022/23",
         ar: 12900,
-        kep:"kepek/harmadik_mez.jpg"
+        kep:"kepek/carvalho_hazai2223.png"
     },
     {
-        termekNev:"Liverpool piros pulcsi",
+        termekNev:"Semleges Mez 2023/24",
         ar: 15400,
-        kep:"kepek/nunez_pulcsi.jpg"
+        kep:"kepek/VVD.png"
     },
     {
-        termekNev:"Liverpool szürke pulcsi",
+        termekNev:"Hazai Mez 2023/24",
         ar:15500,
-        kep:"kepek/tsimikas_pulcsi.jpg"
+        kep:"kepek/diogo.png"
     },
     {
-        termekNev:"Livepool fekete pulcsi",
+        termekNev:"Hazai Mez 2023/24",
         ar:15600,
-        kep:"kepek/tsimikas_pulcsi2.jpg"
+        kep:"kepek/Salah_hazai.png"
     },
     
 ]

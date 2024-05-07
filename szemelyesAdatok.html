@@ -35,8 +35,55 @@
           
           </nav>
     </header>
-    <article class="tartalom">
-      
+    <article>
+      <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="nev" class="form-label">Név:</label>
+                <input type="text" id="nev" name="nev" pattern="[A-ZĆŁŃÓŚŹŻ][a-ząćęłńóśźż]+" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email cím:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                  <label for="utca" class="form-label">Utca:</label>
+                  <input type="text" id="utca" name="utca" class="form-control" required>
+              </div>
+              <div class="col">
+                  <label for="hazszam" class="form-label">Házszám:</label>
+                  <input type="text" id="hazszam" name="hazszam" class="form-control" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                  <label for="telefonszam" class="form-label">Telefonszám:</label>
+                  <div class="input-group">
+                      <select id="telefonKod" name="telefonKod" class="form-select">
+                          <option value="+36">+36 </option>
+                          <option value="06">06   </option>
+                      </select>
+                      <input type="tel" id="telefonszam" name="telefonszam" class="form-control" maxlength="9" pattern="[0-9]{1,9}" required>
+                  </div>
+              </div>
+          </div>
+
+            <div class="mb-3">
+                <label for="telepules" class="form-label">Település:</label>
+                <select id="telepules" name="telepules" class="form-select" required>
+                    <option value="" disabled selected>Válasszon települést</option>
+                    <option value="Budapest">Budapest</option>
+                    <option value="Debrecen">Debrecen</option>
+                   
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="rendel">Rendelés elküldése</button>
+        </form>
+    </div>
 
     </article>
 </body>

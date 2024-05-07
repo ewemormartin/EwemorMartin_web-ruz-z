@@ -6,6 +6,7 @@ import { KosarTorles } from "./fuggvenyek.js";
 import { osszegSzamol,osszegMegjelenit } from "./fuggvenyek.js";
 import {  } from "./adminFuggvenyek.js";
 import { darabSzamFrissites } from "./fuggvenyek.js";
+import { rendelGomb } from "./fuggvenyek.js";
 
 init();
 
@@ -18,7 +19,7 @@ function init() {
     osszegSzamol();
     osszegMegjelenit();
     darabSzamFrissites();
-
+    rendelGomb();
 }
 
 
