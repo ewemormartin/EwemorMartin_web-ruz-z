@@ -4,7 +4,8 @@ import { kartyaLetrehoz, listaMegjelenites } from "./fuggvenyek.js";
 import { Kosarba } from "./fuggvenyek.js";
 import { KosarTorles } from "./fuggvenyek.js";
 import { osszegSzamol,osszegMegjelenit } from "./fuggvenyek.js";
-import { rendezArSzerint } from "./adminFuggvenyek.js";
+import {  } from "./adminFuggvenyek.js";
+import { darabSzamFrissites } from "./fuggvenyek.js";
 
 init();
 
@@ -16,6 +17,7 @@ function init() {
     KosarTorles();
     osszegSzamol();
     osszegMegjelenit();
+    darabSzamFrissites();
 
 }
 

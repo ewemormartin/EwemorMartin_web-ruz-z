@@ -37,7 +37,8 @@ export function Kosarba() {
         `;
         $('.kosarTartalom').append(kosarTXT);
         kosar.push({ termekNev, ar }); 
-        osszegMegjelenit(osszegSzamol()); 
+        osszegMegjelenit(osszegSzamol());
+        darabSzamFrissites(); 
     });
 }
  
@@ -48,6 +49,7 @@ export function KosarTorles() {
         $(this).closest('.cart-item').remove();
         kosar.splice(index, 1);
         osszegMegjelenit(osszegSzamol());
+        darabSzamFrissites();
     });
 }
 
@@ -72,4 +74,8 @@ function rendez(){
         return e1.kor - e2.kor;
     });
     console.log(emberekLISTA);
+}
+export function darabSzamFrissites() {
+    let darab = kosar.length;
+    $('.darabSzam').text(`db: ${darab}`);
 }
