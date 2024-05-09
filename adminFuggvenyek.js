@@ -21,15 +21,18 @@ export function tablazatMegjelenit(adminTXT) {
     $('.adminTartalom').append(adminTXT);
 }
 
-export function rendez(lista, kulcs, rIrany) {
-    const rlista = lista.sort(function(e1,e2) {
-        return e1[kulcs]<e2[kulcs]?-1*rIrany:1*rIrany;
-    });
-    return rlista;
-}
+let novekvoRendben = true; 
+function rendezArSzerint() {
+    novekvoRendben = !novekvoRendben;
 
-export function rendezArSzerint(lista) {
-    const rendezettArLista = kosar.sort(function(a, b){return a - b});  
-    return rendezettArLista;
+    ADATLISTA.sort((a, b) => novekvoRendben ? a.ar - b.ar : b.ar - a.ar);
+    
+    let rendezettTablaHTML = tablazatLetrehoz(ADATLISTA);
+    $('.adminTartalom').empty();
+    
+    tablazatMegjelenit(rendezettTablaHTML);
 }
+$('#rendezArSzerint').on('click', rendezArSzerint);
+
+
 

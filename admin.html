@@ -33,33 +33,34 @@
         </div>
       </nav>
   </header>
+  <div class="urlap">
+    <form class="was-validated">
+      <div class="mb-3 mt-3">
+        <label for="nev" class="form-label">Név:</label>
+        <input type="text" class="form-control" id="nev" required placeholder="Valaki" name="nev"
+          pattern="^[A-Z][a-zA-z ]{2,}$" />
+        <div class="valid-feedback">Ok.</div>
+        <div class="invalid-feedback">
+          A név nagybetűvel kezdődik és legalább 3 betű.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="ar" class="form-label">ar:</label>
+        <input type="number" class="form-control" id="ar" required min="0" max="120" name="ar" />
+        <div class="valid-feedback">Ok.</div>
+        <div class="invalid-feedback">A ar 0 és 120 között lehet.</div>
+      </div>
+      <button type="submit" id="submit" class="btn btn-primary">
+        Hozzáad
+      </button>
+    </form>
+  </div>
+  <br>
+    <button type="button" id="rendezesNevSzerint" class="btn btn-primary">Rendezés név szerint</button>
+    <button type="button" id="rendezArSzerint" class="btn btn-success">Rendezés ár szerint </button>
   <article class="adminTartalom">
     
-    <div class="urlap">
-      <form class="was-validated">
-        <div class="mb-3 mt-3">
-          <label for="nev" class="form-label">Név:</label>
-          <input type="text" class="form-control" id="nev" required placeholder="Valaki" name="nev"
-            pattern="^[A-Z][a-zA-z ]{2,}$" />
-          <div class="valid-feedback">Ok.</div>
-          <div class="invalid-feedback">
-            A név nagybetűvel kezdődik és legalább 3 betű.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="ar" class="form-label">ar:</label>
-          <input type="number" class="form-control" id="ar" required min="0" max="120" name="ar" />
-          <div class="valid-feedback">Ok.</div>
-          <div class="invalid-feedback">A ar 0 és 120 között lehet.</div>
-        </div>
-        <button type="submit" id="submit" class="btn btn-primary">
-          Hozzáad
-        </button>
-      </form>
-    </div>
-    <br>
-      <button type="button" id="rendezesNevSzerint" class="btn btn-primary">Rendezés név szerint</button>
-      <button type="button" id="rendezArSzerint" class="btn btn-success">Rendezés ár szerint </button>
+    
   </article>
 </body>
 

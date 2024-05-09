@@ -68,13 +68,6 @@ export function osszegMegjelenit(){
     $('#kosarOsszeg').empty().append(osszeg);
 }
 
-
-function rendez(){
-    emberekLISTA.sort(function(e1, e2) {
-        return e1.kor - e2.kor;
-    });
-    console.log(emberekLISTA);
-}
 export function darabSzamFrissites() {
     let darab = kosar.length;
     $('.darabSzam').text(`db: ${darab}`);
