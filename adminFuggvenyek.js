@@ -29,10 +29,13 @@ function rendezArSzerint() {
     
     let rendezettTablaHTML = tablazatLetrehoz(ADATLISTA);
     $('.adminTartalom').empty();
-    
     tablazatMegjelenit(rendezettTablaHTML);
 }
 $('#rendezArSzerint').on('click', rendezArSzerint);
 
 
 
+let novekvoRendbenNev = true;
+function rendezNevSzerint(){
+    
+}
