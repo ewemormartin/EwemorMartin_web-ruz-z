@@ -38,7 +38,10 @@ Amilyen függvéneyket használok:
             Kiszamolja az osszeget a kosar listában lévő $ar osszegekből és vissza ad egy osszeg változót
     osszegMegjelenit():
             Megjeleniti a #kosarOsszeg id-val rendelkező elembe az "osszeg" változót
-    arSzerintSorrend():
+    darabSzamFrissites():
+            letrehoz egy darab változót ami a kosar lista elemeinek az összegét tárolja és megjleniti a kosárban db számként.
+    rendezArSzerint():
+            Ha a novekvoRendben igaz akkor gombra kattintásra csökkenő sorrendbe állitja be a tábla elemit az ár szerint, ugyan ez forditva ha a novekvoRendben hamis               akkor növekvő sorrendbe állitja gomb kattintásra.
     nevSzerintSorrend():
     
         
