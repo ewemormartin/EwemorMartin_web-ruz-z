@@ -35,6 +35,9 @@ Amilyen függvéneyket használok:
           Azokat a kártya termékeket amiket a kosárTartalomba raktunk kattintásra eltávolítja onnan.
 
     osszegSzamol():
+            Kiszamolja az osszeget a kosar listában lévő $ar osszegekből és vissza ad egy osszeg változót
+    osszegMegjelenit():
+            Megjeleniti a #kosarOsszeg id-val rendelkező elembe az "osszeg" változót
     arSzerintSorrend():
     nevSzerintSorrend():
     
