@@ -35,7 +35,26 @@ $('#rendezArSzerint').on('click', rendezArSzerint);
 
 
 
-let novekvoRendbenNev = true;
-function rendezNevSzerint(){
-    
+let novekvoRendbenNevSzerint = true;
+function rendezNevSzerint() {
+    novekvoRendbenNevSzerint = !novekvoRendbenNevSzerint;
+
+    ADATLISTA.sort((elsoElem, masodikElem) => {
+        const elsoNev = elsoElem.termekNev.toUpperCase();
+        const masodikNev = masodikElem.termekNev.toUpperCase();
+        if (novekvoRendbenNevSzerint) {
+            if (elsoNev < masodikNev) return -1;
+            if (elsoNev > masodikNev) return 1;
+            return 0;
+        } else {
+            if (elsoNev > masodikNev) return -1;
+            if (elsoNev < masodikNev) return 1;
+            return 0;
+        }
+    });
+
+    let rendezettTablaHTML = tablazatLetrehoz(ADATLISTA);
+    $('.adminTartalom').empty();
+    tablazatMegjelenit(rendezettTablaHTML);
 }
+$('#rendezesNevSzerint').on('click', rendezNevSzerint);

@@ -25,7 +25,7 @@ export const ADATLISTA=[
         kep:"kepek/diogo.png"
     },
     {
-        termekNev:"Hazai Mez 2023/24",
+        termekNev:"Hazai Mez 2023/24 11",
         ar:15600,
         kep:"kepek/Salah_hazai.png"
     },
