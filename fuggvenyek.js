@@ -65,7 +65,7 @@ export function osszegSzamol(){
 
 export function osszegMegjelenit(){
     let osszeg = osszegSzamol();
-    $('#kosarOsszeg').empty().append(osszeg);
+    $('#kosarOsszeg').empty().append(osszeg + 'ft');
 }
 
 /* export function darabSzamFrissites() {
