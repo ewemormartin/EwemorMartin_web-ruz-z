@@ -49,7 +49,7 @@ export function KosarTorles() {
         $(this).closest('.cart-item').remove();
         kosar.splice(index, 1);
         osszegMegjelenit(osszegSzamol());
-        darabSzamFrissites();
+       /*  darabSzamFrissites(); */
     });
 }
 
@@ -68,10 +68,10 @@ export function osszegMegjelenit(){
     $('#kosarOsszeg').empty().append(osszeg);
 }
 
-export function darabSzamFrissites() {
+/* export function darabSzamFrissites() {
     let darab = kosar.length;
     $('.darabSzam').text(`db: ${darab}`);
-}
+} */
 
 
 export function rendelGomb() {
@@ -99,3 +99,30 @@ export function keresesSzuro() {
 $(document).ready(function() {
     keresesSzuro();
 });
+
+
+/* export function Kosarba() {
+    $('.tartalom').on('click', '.kosarbaRak', function() {
+        let kartya = $(this).closest('.card');
+        let termekNev = kartya.find('.card-title').text();
+        let ar = kartya.find('.card-text').text();
+        let termekIndex = kosar.findIndex(item => item.termekNev === termekNev);
+        if (termekIndex !== -1) {
+            kosar[termekIndex].darab++;
+        } else {
+            // Ha még nem szerepel a kosárban, hozzáadjuk új elemként
+            kosar.push({ termekNev, ar, darab: 1 }); 
+        }
+        let kosarTXT = 
+        `
+            <div class="cart-item">
+                <p>${termekNev} - ${ar}${kosar[termekIndex].darab > 1 ? ` - db: ${kosar[termekIndex].darab}` : ''}</p>
+                <button class="btn btn-danger delete-btn">Delete</button>
+            </div>
+        `;
+        $('.kosarTartalom').append(kosarTXT);
+        
+        osszegMegjelenit(osszegSzamol());
+        darabSzamFrissites(); 
+    });
+} */
