@@ -9,6 +9,7 @@ import { rendelGomb } from "./fuggvenyek.js";
 init();
 
 
+
 function init() {
     listaMegjelenites(kartyaLetrehoz(ADATLISTA));
     Kosarba();
@@ -17,6 +18,7 @@ function init() {
     osszegMegjelenit();
     darabSzamFrissites();
     rendelGomb();
+    
 }
 
 

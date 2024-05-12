@@ -81,3 +81,21 @@ export function rendelGomb() {
         });
     });
 }
+
+export function keresesSzuro() {
+    $('#kereses').on('input', function(event) {
+        let szoveg = $(event.currentTarget).val().toLowerCase();
+        $('.tartalom .container').each(function() {
+            let termekNev = $(this).find('.card-title').text().toLowerCase();
+            if (termekNev.indexOf(szoveg) === -1) {
+                $(this).hide();
+            } else {
+                $(this).show();
+            }
+        });
+    });
+}
+
+$(document).ready(function() {
+    keresesSzuro();
+});
